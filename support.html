@@ -25,9 +25,9 @@
 
     <main class="container section" style="padding-top: 120px;">
         <h1 style="margin-bottom: 32px;">App Support</h1>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 64px;">
+        <div class="support-grid">
             <div>
-                <p style="color: var(--text-secondary); margin-bottom: 24px; font-size: 18px;">
+                <p class="support-intro">
                     Having trouble with one of our apps? We're here to help.
                     Please fill out the form or send us an email directly.
                 </p>
@@ -40,18 +40,16 @@
 
                 <div>
                     <h3 style="margin-bottom: 8px;">Frequently Asked Questions</h3>
-                    <details
-                        style="margin-bottom: 16px; border-bottom: 1px solid var(--glass-border); padding-bottom: 16px;">
-                        <summary style="cursor: pointer; font-weight: 500;">How do I restore purchases?</summary>
-                        <p style="margin-top: 8px; color: var(--text-secondary); font-size: 14px;">
+                    <details class="faq-item">
+                        <summary>How do I restore purchases?</summary>
+                        <p>
                             Go to the settings menu within the app and tap on "Restore Purchases". Ensure you are signed
                             in with the same Apple ID used to make the purchase.
                         </p>
                     </details>
-                    <details
-                        style="margin-bottom: 16px; border-bottom: 1px solid var(--glass-border); padding-bottom: 16px;">
-                        <summary style="cursor: pointer; font-weight: 500;">The app is crashing on launch.</summary>
-                        <p style="margin-top: 8px; color: var(--text-secondary); font-size: 14px;">
+                    <details class="faq-item">
+                        <summary>The app is crashing on launch.</summary>
+                        <p>
                             Please try reinstalling the app. If the issue persists, contact us with your device model
                             and iOS version.
                         </p>
@@ -59,26 +57,19 @@
                 </div>
             </div>
 
-            <div
-                style="background: var(--bg-secondary); padding: 32px; border-radius: 18px; border: 1px solid var(--glass-border);">
+            <div class="contact-form-container">
                 <form action="mailto:support@appcellent.co" method="post" enctype="text/plain">
-                    <div style="margin-bottom: 16px;">
-                        <label style="display: block; margin-bottom: 8px; font-size: 14px;">Name</label>
-                        <input type="text"
-                            style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: white;"
-                            placeholder="Your Name">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-input" placeholder="Your Name">
                     </div>
-                    <div style="margin-bottom: 16px;">
-                        <label style="display: block; margin-bottom: 8px; font-size: 14px;">Email</label>
-                        <input type="email"
-                            style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: white;"
-                            placeholder="your@email.com">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-input" placeholder="your@email.com">
                     </div>
-                    <div style="margin-bottom: 24px;">
-                        <label style="display: block; margin-bottom: 8px; font-size: 14px;">Message</label>
-                        <textarea rows="5"
-                            style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: white;"
-                            placeholder="Describe your issue..."></textarea>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea rows="5" class="form-input" placeholder="Describe your issue..."></textarea>
                     </div>
                     <button type="submit" class="cta-button" style="border: none; cursor: pointer; width: 100%;">Send
                         Message</button>
@@ -104,7 +95,7 @@
                     <h4>Legal</h4>
                     <ul>
                         <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -116,7 +107,7 @@
                 </div>
             </div>
             <div class="copyright">
-                &copy; 2024 Appcellent. All rights reserved.
+                &copy; 2025 Appcellent. All rights reserved.
             </div>
         </div>
     </footer>

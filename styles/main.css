@@ -4,7 +4,8 @@
     --bg-secondary: #121212;
     --text-primary: #f5f5f7;
     --text-secondary: #86868b;
-    --accent-color: #2997ff; /* Apple Blue */
+    --accent-color: #2997ff;
+    /* Apple Blue */
     --accent-hover: #0077ed;
     --border-color: #333333;
     --glass-bg: rgba(255, 255, 255, 0.05);
@@ -16,7 +17,7 @@
     --font-size-h1: 56px;
     --font-size-h2: 40px;
     --font-size-h3: 28px;
-    
+
     /* Spacing */
     --spacing-sm: 8px;
     --spacing-md: 16px;
@@ -108,7 +109,8 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 60px; /* Offset for fixed header */
+    padding-top: 60px;
+    /* Offset for fixed header */
 }
 
 .hero h1 {
@@ -118,6 +120,7 @@ nav {
     margin-bottom: var(--spacing-md);
     background: linear-gradient(135deg, #fff 0%, #aaa 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -216,13 +219,81 @@ footer {
     color: var(--text-secondary);
 }
 
+/* Support Page Styles */
+.support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+}
+
+.support-intro {
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.faq-item {
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--glass-border);
+    padding-bottom: 16px;
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.faq-item p {
+    margin-top: 8px;
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.contact-form-container {
+    background: var(--bg-secondary);
+    padding: 32px;
+    border-radius: 18px;
+    border: 1px solid var(--glass-border);
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
+    color: white;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     :root {
         --font-size-h1: 40px;
     }
-    
+
     .hero p {
         font-size: 18px;
+    }
+
+    .support-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
     }
 }
