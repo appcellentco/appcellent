@@ -3,6 +3,46 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "studfinder.appcellent.co"
+        }
+      ],
+      "destination": "/studfinder/index.html"
+    },
+    {
+      "source": "/privacy",
+      "has": [
+        {
+          "type": "host",
+          "value": "studfinder.appcellent.co"
+        }
+      ],
+      "destination": "/studfinder/privacy.html"
+    },
+    {
+      "source": "/terms",
+      "has": [
+        {
+          "type": "host",
+          "value": "studfinder.appcellent.co"
+        }
+      ],
+      "destination": "/studfinder/terms.html"
+    },
+    {
+      "source": "/faq",
+      "has": [
+        {
+          "type": "host",
+          "value": "studfinder.appcellent.co"
+        }
+      ],
+      "destination": "/studfinder/faq.html"
+    },
+    {
       "source": "/studfinder",
       "destination": "/studfinder/index.html"
     },
