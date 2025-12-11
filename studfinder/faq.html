@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Stud Finder</title>
+    <meta name="description" content="Frequently Asked Questions about Stud Finder app by Appcellent.">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔍</text></svg>">
+    <style>
+        .content-section {
+            padding-top: 120px;
+            padding-bottom: 64px;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        .content-container h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .content-container .intro {
+            color: var(--text-secondary);
+            margin-bottom: 48px;
+            font-size: 18px;
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--glass-border);
+            padding-bottom: 24px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item summary {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 20px;
+            padding: 12px 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: '+';
+            font-size: 24px;
+            font-weight: 300;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-item p {
+            margin-top: 12px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            padding-left: 0;
+        }
+
+        .faq-item ul {
+            list-style: disc;
+            margin-left: 24px;
+            margin-top: 12px;
+        }
+
+        .faq-item li {
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            line-height: 1.7;
+        }
+
+        .faq-item a {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        .faq-item a:hover {
+            color: var(--accent-hover);
+        }
+
+        .contact-section {
+            background: var(--bg-secondary);
+            padding: 32px;
+            border-radius: 18px;
+            border: 1px solid var(--glass-border);
+            margin-top: 48px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .contact-section p {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+
+        .contact-section a {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/studfinder" class="logo">Stud Finder</a>
+                <div class="nav-links">
+                    <a href="/studfinder/faq">FAQ</a>
+                    <a href="/studfinder/privacy">Privacy</a>
+                    <a href="/studfinder/terms">Terms</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <div class="content-container">
+                <h1>Frequently Asked Questions</h1>
+                <p class="intro">Find answers to common questions about Stud Finder. If you can't find what you're
+                    looking for, feel free to contact us.</p>
+
+                <details class="faq-item">
+                    <summary>How does Stud Finder work?</summary>
+                    <p>Stud Finder uses your iPhone's built-in magnetometer to detect magnetic fields created by metal
+                        fasteners (nails or screws) in wall studs. When you move your device across a wall, the app
+                        detects changes in the magnetic field and alerts you when a stud is detected.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Which devices are compatible with Stud Finder?</summary>
+                    <p>Stud Finder is compatible with iPhone models that have a magnetometer sensor. This includes most
+                        iPhone models from iPhone 6 and newer. The app requires iOS 15.0 or later.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How accurate is the stud detection?</summary>
+                    <p>Stud Finder provides reliable detection in most standard wall constructions. However, accuracy
+                        can be affected by:</p>
+                    <ul>
+                        <li>Wall thickness and material composition</li>
+                        <li>Presence of metal pipes, wiring, or other objects</li>
+                        <li>Distance between the device and the wall surface</li>
+                        <li>Environmental magnetic interference</li>
+                    </ul>
+                    <p>For professional construction work, we recommend verifying measurements with professional-grade
+                        equipment.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Do I need an internet connection to use the app?</summary>
+                    <p>No, Stud Finder works completely offline. All stud detection happens locally on your device using
+                        the magnetometer sensor. An internet connection is only required for initial download and
+                        updates.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What's included in the premium subscription?</summary>
+                    <p>The premium subscription unlocks:</p>
+                    <ul>
+                        <li>Unlimited scans without restrictions</li>
+                        <li>Advanced haptic feedback for precise detection</li>
+                        <li>Built-in level tool for perfect alignment</li>
+                        <li>Ad-free experience</li>
+                        <li>Priority customer support</li>
+                    </ul>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How do I cancel my subscription?</summary>
+                    <p>To cancel your subscription:</p>
+                    <ul>
+                        <li>Open the Settings app on your iPhone</li>
+                        <li>Tap your name at the top</li>
+                        <li>Tap "Subscriptions"</li>
+                        <li>Select Stud Finder</li>
+                        <li>Tap "Cancel Subscription"</li>
+                    </ul>
+                    <p>You'll continue to have access to premium features until the end of your current billing period.
+                    </p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I get a refund?</summary>
+                    <p>All purchases are processed through Apple's App Store. Refund requests must be submitted to Apple
+                        directly. You can request a refund by visiting <a href="https://reportaproblem.apple.com"
+                            target="_blank">reportaproblem.apple.com</a> and signing in with your Apple ID.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Why isn't the app detecting studs?</summary>
+                    <p>If you're having trouble detecting studs, try the following:</p>
+                    <ul>
+                        <li>Ensure your iPhone case doesn't contain metal or magnets</li>
+                        <li>Remove any magnetic accessories from your phone</li>
+                        <li>Hold the device flat against the wall</li>
+                        <li>Move slowly and steadily across the wall surface</li>
+                        <li>Calibrate the app by moving away from the wall and returning</li>
+                        <li>Check that you've granted necessary sensor permissions</li>
+                    </ul>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Does the app work on all wall types?</summary>
+                    <p>Stud Finder works best on standard drywall with wood or metal studs. Performance may vary on:</p>
+                    <ul>
+                        <li>Plaster walls</li>
+                        <li>Concrete or brick walls</li>
+                        <li>Walls with extensive metal lath</li>
+                        <li>Walls with significant electrical wiring or plumbing</li>
+                    </ul>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How do I use the level feature?</summary>
+                    <p>The level feature (available in premium) helps you ensure perfect alignment:</p>
+                    <ul>
+                        <li>Tap the level icon in the app</li>
+                        <li>Place your iPhone against the surface you want to level</li>
+                        <li>The app will show you the angle and provide visual feedback</li>
+                        <li>Adjust until the indicator shows level (0 degrees)</li>
+                    </ul>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Is my data private and secure?</summary>
+                    <p>Yes. Stud Finder processes all sensor data locally on your device. We don't collect, store, or
+                        transmit your sensor readings. For more information, please read our <a
+                            href="/studfinder/privacy">Privacy Policy</a>.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How do I contact support?</summary>
+                    <p>For support inquiries, feature requests, or bug reports, please email us at <a
+                            href="mailto:contact@appcellent.co">contact@appcellent.co</a>. We typically respond within
+                        24-48 hours.</p>
+                </details>
+
+                <div class="contact-section">
+                    <h2>Still have questions?</h2>
+                    <p>We're here to help! Reach out to our support team.</p>
+                    <a href="mailto:contact@appcellent.co">contact@appcellent.co</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo">Stud Finder</span>
+                    <p style="color: var(--text-secondary); margin-top: 8px; font-size: 14px;">by Appcellent</p>
+                </div>
+                <div class="footer-links">
+                    <h4>App</h4>
+                    <ul>
+                        <li><a href="/studfinder">Home</a></li>
+                        <li><a href="/studfinder/faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/studfinder/privacy">Privacy Policy</a></li>
+                        <li><a href="/studfinder/terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="/">Appcellent</a></li>
+                        <li><a href="mailto:contact@appcellent.co">contact@appcellent.co</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Appcellent. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/app.js"></script>
+</body>
+
+</html>

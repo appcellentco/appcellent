@@ -1,4 +1,22 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/studfinder",
+      "destination": "/studfinder/index.html"
+    },
+    {
+      "source": "/studfinder/privacy",
+      "destination": "/studfinder/privacy.html"
+    },
+    {
+      "source": "/studfinder/terms",
+      "destination": "/studfinder/terms.html"
+    },
+    {
+      "source": "/studfinder/faq",
+      "destination": "/studfinder/faq.html"
+    }
+  ]
 }
