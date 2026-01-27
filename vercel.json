@@ -15,6 +15,20 @@
     {
       "source": "/studfinder/:path*",
       "destination": "/studfinder/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "tcgvault.appcellent.co"
+        }
+      ],
+      "destination": "/tcgvault/:path*"
+    },
+    {
+      "source": "/tcgvault/:path*",
+      "destination": "/tcgvault/:path*"
     }
   ]
 }
