@@ -15,10 +15,6 @@
       "destination": "/studfinder/:path*"
     },
     {
-      "source": "/studfinder/:path*",
-      "destination": "/studfinder/:path*"
-    },
-    {
       "source": "/:path*",
       "has": [
         {
@@ -29,8 +25,8 @@
       "destination": "/tcgvault/:path*"
     },
     {
-      "source": "/tcgvault/:path*",
-      "destination": "/tcgvault/:path*"
+      "source": "/:path*",
+      "destination": "/main/:path*"
     }
   ]
 }
