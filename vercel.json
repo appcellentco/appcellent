@@ -1,5 +1,5 @@
 {
-  "buildCommand": "mkdir -p public && cp -r main/* public/ && cp -r studfinder public/ && cp -r tcgvault public/ && cp -r styles public/",
+  "buildCommand": "mkdir -p public && cp -r main public/main && cp -r studfinder public/studfinder && cp -r tcgvault public/tcgvault && cp -r styles public/styles && cp -r scripts public/scripts",
   "outputDirectory": "public",
   "cleanUrls": true,
   "trailingSlash": false,
@@ -23,6 +23,16 @@
         }
       ],
       "destination": "/tcgvault/:path*"
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "appcellent.co"
+        }
+      ],
+      "destination": "/main/:path*"
     }
   ]
 }
