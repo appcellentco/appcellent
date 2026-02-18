@@ -5,52 +5,28 @@
   "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/",
+      "source": "/:path(.*)",
       "has": [
         {
           "type": "host",
           "value": "studfinder.appcellent.co"
         }
       ],
-      "destination": "/studfinder/index"
+      "destination": "/studfinder/:path"
     },
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "studfinder.appcellent.co"
-        }
-      ],
-      "destination": "/studfinder/:path*"
-    },
-    {
-      "source": "/",
+      "source": "/:path(.*)",
       "has": [
         {
           "type": "host",
           "value": "tcgvault.appcellent.co"
         }
       ],
-      "destination": "/tcgvault/index"
+      "destination": "/tcgvault/:path"
     },
     {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "tcgvault.appcellent.co"
-        }
-      ],
-      "destination": "/tcgvault/:path*"
-    },
-    {
-      "source": "/",
-      "destination": "/main/index"
-    },
-    {
-      "source": "/:path*",
-      "destination": "/main/:path*"
+      "source": "/:path(.*)",
+      "destination": "/main/:path"
     }
   ]
 }
