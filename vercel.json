@@ -5,6 +5,16 @@
   "trailingSlash": false,
   "rewrites": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "studfinder.appcellent.co"
+        }
+      ],
+      "destination": "/studfinder/index.html"
+    },
+    {
       "source": "/:path*",
       "has": [
         {
@@ -15,6 +25,16 @@
       "destination": "/studfinder/:path*"
     },
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "tcgvault.appcellent.co"
+        }
+      ],
+      "destination": "/tcgvault/index.html"
+    },
+    {
       "source": "/:path*",
       "has": [
         {
@@ -23,6 +43,10 @@
         }
       ],
       "destination": "/tcgvault/:path*"
+    },
+    {
+      "source": "/",
+      "destination": "/main/index.html"
     },
     {
       "source": "/:path*",
