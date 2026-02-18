@@ -1,5 +1,5 @@
 {
-  "buildCommand": "mkdir -p public && cp -r main studfinder tcgvault styles public/",
+  "buildCommand": "mkdir -p public && cp -r main/* public/ && cp -r studfinder public/ && cp -r tcgvault public/ && cp -r styles public/",
   "outputDirectory": "public",
   "cleanUrls": true,
   "trailingSlash": false,
@@ -23,14 +23,6 @@
         }
       ],
       "destination": "/tcgvault/:path*"
-    },
-    {
-      "source": "/",
-      "destination": "/main/index.html"
-    },
-    {
-      "source": "/:path*",
-      "destination": "/main/:path*"
     }
   ]
 }
