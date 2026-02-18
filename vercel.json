@@ -25,6 +25,10 @@
       "destination": "/tcgvault/:path*"
     },
     {
+      "source": "/",
+      "destination": "/main/index.html"
+    },
+    {
       "source": "/:path*",
       "destination": "/main/:path*"
     }
