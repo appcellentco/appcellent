@@ -1,6 +1,6 @@
 {
-  "buildCommand": "true",
-  "outputDirectory": ".",
+  "buildCommand": "mkdir -p public && cp -r main studfinder tcgvault styles assets public/",
+  "outputDirectory": "public",
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
