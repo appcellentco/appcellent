@@ -12,7 +12,7 @@
           "value": "studfinder.appcellent.co"
         }
       ],
-      "destination": "/studfinder/index.html"
+      "destination": "/studfinder/index"
     },
     {
       "source": "/:path*",
@@ -32,7 +32,7 @@
           "value": "tcgvault.appcellent.co"
         }
       ],
-      "destination": "/tcgvault/index.html"
+      "destination": "/tcgvault/index"
     },
     {
       "source": "/:path*",
@@ -46,7 +46,7 @@
     },
     {
       "source": "/",
-      "destination": "/main/index.html"
+      "destination": "/main/index"
     },
     {
       "source": "/:path*",
