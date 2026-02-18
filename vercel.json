@@ -1,9 +1,19 @@
 {
-  "buildCommand": "mkdir -p public && cp -r main public/main && cp -r studfinder public/studfinder && cp -r tcgvault public/tcgvault && cp -r styles public/styles && cp -r scripts public/scripts",
+  "buildCommand": "mkdir -p public && cp -r main public/main && cp -r studfinder public/studfinder && cp -r tcgvault public/tcgvault && cp -r styles public/styles && cp -r scripts public/scripts && mv public/main/index.html public/main/home.html && mv public/tcgvault/index.html public/tcgvault/home.html && mv public/studfinder/index.html public/studfinder/home.html",
   "outputDirectory": "public",
   "cleanUrls": true,
   "trailingSlash": false,
   "rewrites": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "studfinder.appcellent.co"
+        }
+      ],
+      "destination": "/studfinder/home"
+    },
     {
       "source": "/:path(.*)",
       "has": [
@@ -15,6 +25,16 @@
       "destination": "/studfinder/:path"
     },
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "tcgvault.appcellent.co"
+        }
+      ],
+      "destination": "/tcgvault/home"
+    },
+    {
       "source": "/:path(.*)",
       "has": [
         {
@@ -23,6 +43,10 @@
         }
       ],
       "destination": "/tcgvault/:path"
+    },
+    {
+      "source": "/",
+      "destination": "/main/home"
     },
     {
       "source": "/:path(.*)",
