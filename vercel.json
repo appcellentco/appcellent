@@ -49,6 +49,26 @@
       "has": [
         {
           "type": "host",
+          "value": "protractor.appcellent.co"
+        }
+      ],
+      "destination": "/protractor/home"
+    },
+    {
+      "source": "/:path(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "protractor.appcellent.co"
+        }
+      ],
+      "destination": "/protractor/:path"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
           "value": "volumebooster.appcellent.co"
         }
       ],
