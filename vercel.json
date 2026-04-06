@@ -86,6 +86,26 @@
     },
     {
       "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "limify.appcellent.co"
+        }
+      ],
+      "destination": "/limify/home"
+    },
+    {
+      "source": "/:path(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "limify.appcellent.co"
+        }
+      ],
+      "destination": "/limify/:path"
+    },
+    {
+      "source": "/",
       "destination": "/main/home"
     },
     {
