@@ -106,6 +106,26 @@
     },
     {
       "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "coloringpage.appcellent.co"
+        }
+      ],
+      "destination": "/coloringpage/home"
+    },
+    {
+      "source": "/:path(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "coloringpage.appcellent.co"
+        }
+      ],
+      "destination": "/coloringpage/:path"
+    },
+    {
+      "source": "/",
       "destination": "/main/home"
     },
     {
