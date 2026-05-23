@@ -109,20 +109,20 @@
       "has": [
         {
           "type": "host",
-          "value": "coloringpage.appcellent.co"
+          "value": "colorzy.appcellent.co"
         }
       ],
-      "destination": "/coloringpage/home"
+      "destination": "/colorzy/home"
     },
     {
       "source": "/:path(.*)",
       "has": [
         {
           "type": "host",
-          "value": "coloringpage.appcellent.co"
+          "value": "colorzy.appcellent.co"
         }
       ],
-      "destination": "/coloringpage/:path"
+      "destination": "/colorzy/:path"
     },
     {
       "source": "/",
