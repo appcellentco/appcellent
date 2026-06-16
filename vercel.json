@@ -29,6 +29,26 @@
       "has": [
         {
           "type": "host",
+          "value": "metaldetector.appcellent.co"
+        }
+      ],
+      "destination": "/metaldetector/home"
+    },
+    {
+      "source": "/:path(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "metaldetector.appcellent.co"
+        }
+      ],
+      "destination": "/metaldetector/:path"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
           "value": "tcgvault.appcellent.co"
         }
       ],
