@@ -95,11 +95,15 @@
         <section class="content-section">
             <div class="content-container">
                 <h1>Privacy Policy</h1>
-                <p class="last-updated">Last Updated: April 5, 2026</p>
+                <p class="last-updated">Last Updated: July 22, 2026</p>
 
                 <p>Appcellent Yazılım Hizmetleri Anonim Şirketi ("Company", "we", "us", or "our") operates the mobile
                     application Protractor Measuring Angle (the "App"). We recognize that your privacy is a serious matter,
                     and we are dedicated to protecting your data while providing a helpful utility tool.</p>
+
+                <p>This policy applies to both the iOS version of the App (distributed via the Apple App Store) and the
+                    Android version (distributed via the Google Play Store). Where a practice differs between the two
+                    platforms, it is noted explicitly below.</p>
 
                 <p>This Privacy Policy outlines how we handle data, the permissions we request, and your rights
                     regarding your information. By downloading or using the App, you consent to the practices described
@@ -107,14 +111,24 @@
 
                 <h2>1. Hardware Permissions & Sensor Usage</h2>
 
-                <p>To function as an angle measurement tool, the App requires access to specific hardware features on your iOS
-                    device. We prioritize on-device processing to ensure your privacy.</p>
+                <p>To function as an angle measurement tool, the App requires access to specific hardware features on your
+                    iOS or Android device. We prioritize on-device processing to ensure your privacy.</p>
 
                 <p><strong>Gyroscope & Accelerometer:</strong> The App accesses data from your device's
-                    gyroscope and accelerometer sensors to measure angles and orientation accurately.</p>
+                    gyroscope and accelerometer sensors to measure angles and orientation accurately. Motion sensors do
+                    not require a runtime permission on either platform.</p>
 
                 <p><strong>Camera (Optional):</strong> If you use the camera-based measurement feature, the App
-                    accesses your device's camera to overlay angle measurements on real-world objects.</p>
+                    accesses your device's camera to overlay angle measurements on real-world objects. The camera
+                    permission is requested only when you open a camera-based mode, and the App remains fully usable
+                    without granting it.</p>
+
+                <p><strong>Photos (Optional):</strong> If you choose to measure an angle on an existing photo, the App
+                    uses the operating system's own photo picker and receives only the single image you select. It never
+                    gains access to your wider photo library, and the selected image is processed on your device only.</p>
+
+                <p><strong>Vibration (Android):</strong> The Android version declares the vibration permission solely to
+                    provide haptic feedback at common angles. This permission grants no access to any data.</p>
 
                 <p><strong>Privacy Guarantee:</strong> All sensor and camera data is processed locally on your device in
                     real-time. We do not record, store, upload, or transmit raw sensor or camera data to our servers. Once the
@@ -127,13 +141,17 @@
 
                 <ul>
                     <li><strong>Device Information:</strong> We may collect data such as your device model (e.g., iPhone
-                        15 Pro), operating system version (e.g., iOS 19.1), and preferred language settings.</li>
+                        15 Pro or Google Pixel 8 Pro), operating system version (e.g., iOS 19.1 or Android 15), and
+                        preferred language settings.</li>
                     <li><strong>Usage Metrics:</strong> We use aggregated, anonymous data to understand how the App is
                         used (e.g., session length, frequency of use, and crash reports). This helps us identify bugs
-                        and optimize performance.</li>
-                    <li><strong>Advertising IDs:</strong> If you grant permission via the App Tracking Transparency
-                        (ATT) prompt, we may access your device's Identifier for Advertisers (IDFA) to deliver more
-                        relevant advertisements.</li>
+                        and optimize performance. On both platforms these events are tied to a randomly generated
+                        installation identifier, not to your name, email address, or account.</li>
+                    <li><strong>Advertising IDs (iOS only):</strong> On iOS, if you grant permission via the App
+                        Tracking Transparency (ATT) prompt, we may access your device's Identifier for Advertisers
+                        (IDFA) to deliver more relevant advertisements. <strong>The Android version does not collect or
+                        use the Google Advertising ID (AAID)</strong> and does not track you across other apps or
+                        websites.</li>
                 </ul>
 
                 <h2>3. Personal Data & User Input</h2>
@@ -155,10 +173,15 @@
 
                 <ul>
                     <li><strong>Transaction Handling:</strong> All financial transactions are processed directly by
-                        Apple (App Store).</li>
+                        Apple (App Store) on iOS and by Google (Google Play Billing) on Android.</li>
                     <li><strong>Data Security:</strong> We never access, view, or store your credit card details or
-                        billing information. We only receive a cryptographic token from Apple confirming that a purchase
-                        was completed.</li>
+                        billing information. We only receive a receipt token from Apple or Google confirming that a
+                        purchase was completed.</li>
+                    <li><strong>Subscription Management:</strong> We use RevenueCat, Inc. as our subscription
+                        infrastructure provider. RevenueCat validates store receipts on our behalf and receives the
+                        purchase token together with an anonymous app user ID. See the
+                        <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy
+                        Policy</a> for details.</li>
                 </ul>
 
                 <h2>5. Third-Party Services and Data Sharing</h2>
@@ -167,9 +190,12 @@
                     facilitate app functionality, analytics, and advertising.</p>
 
                 <ul>
-                    <li><strong>Service Providers:</strong> We may use third-party tools (such as Firebase or Google
-                        Analytics) to analyze usage patterns. These providers are contractually obligated to protect
-                        your data.</li>
+                    <li><strong>Service Providers:</strong> We may use third-party tools to analyze usage patterns and
+                        operate the App. On Android these are Mixpanel (product analytics), RevenueCat (subscription
+                        management), and Google Play services such as Google Play Billing and the Google Play In-App
+                        Review API. These providers are contractually obligated to protect your data.</li>
+                    <li><strong>Data in Transit:</strong> All data exchanged between the App and these providers is
+                        encrypted in transit using HTTPS/TLS.</li>
                     <li><strong>Legal Requirements:</strong> We may disclose information if required by law, such as to
                         comply with a subpoena or to protect the safety of our users.</li>
                     <li><strong>Business Transfers:</strong> If Appcellent Yazılım Hizmetleri Anonim Şirketi is involved
@@ -199,8 +225,13 @@
                     <li><strong>Right to Access:</strong> You may request details about the data we hold about you.</li>
                     <li><strong>Right to Deletion:</strong> You may request that we delete your personal data (e.g.,
                         support emails).</li>
-                    <li><strong>Right to Opt-Out:</strong> You can opt out of targeted advertising tracking via your iOS
-                        Settings > Privacy & Security > Tracking.</li>
+                    <li><strong>Right to Opt-Out:</strong> On iOS, you can opt out of targeted advertising tracking via
+                        Settings > Privacy & Security > Tracking. On Android, you can delete or opt out of the
+                        Advertising ID via Settings > Privacy > Ads (note that the Android version of the App does not
+                        use it in the first place).</li>
+                    <li><strong>Right to Withdraw:</strong> You can revoke any permission you previously granted at any
+                        time in your device settings (iOS: Settings > Protractor; Android: Settings > Apps > Protractor
+                        > Permissions), or delete all locally stored data by uninstalling the App.</li>
                 </ul>
 
                 <p>To exercise these rights, please contact us at <a

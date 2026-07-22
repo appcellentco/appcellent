@@ -147,6 +147,14 @@ nav {
     background-color: #fff;
 }
 
+/* Store badges side by side when an app ships on both iOS and Android */
+.store-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
 /* Features / Apps Section */
 .grid {
     display: grid;
