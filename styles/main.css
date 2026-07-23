@@ -293,6 +293,206 @@ footer {
     border-color: var(--accent-color);
 }
 
+/* Help Center */
+.help-page {
+    padding-top: 120px;
+    min-height: 70vh;
+}
+
+.help-lead {
+    color: var(--text-secondary);
+    font-size: 18px;
+    max-width: 620px;
+    margin-bottom: 48px;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+}
+
+.breadcrumb a {
+    color: var(--text-secondary);
+}
+
+.breadcrumb a:hover {
+    color: var(--text-primary);
+}
+
+.breadcrumb .sep {
+    opacity: 0.5;
+}
+
+.breadcrumb .current {
+    color: var(--text-primary);
+}
+
+/* Category cards on the help home */
+.help-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.help-card {
+    background: var(--bg-secondary);
+    border-radius: 18px;
+    padding: var(--spacing-lg);
+    border: 1px solid var(--glass-border);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: block;
+    color: inherit;
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+.help-card h3 {
+    font-size: 22px;
+    margin-bottom: var(--spacing-sm);
+}
+
+.help-card p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    margin-bottom: var(--spacing-md);
+}
+
+.help-card .help-card-meta {
+    font-size: 13px;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+/* Article list on a category page */
+.article-list {
+    border-top: 1px solid var(--glass-border);
+    max-width: 760px;
+}
+
+.article-list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 4px;
+    border-bottom: 1px solid var(--glass-border);
+    color: var(--text-primary);
+    font-size: 17px;
+}
+
+.article-list a:hover {
+    color: var(--accent-color);
+}
+
+.article-list a .chevron {
+    color: var(--text-secondary);
+    transition: transform 0.2s ease;
+}
+
+.article-list a:hover .chevron {
+    transform: translateX(4px);
+    color: var(--accent-color);
+}
+
+/* Article body prose */
+.article-body {
+    max-width: 720px;
+    margin-top: 32px;
+}
+
+.article-body h2 {
+    font-size: 24px;
+    margin: 40px 0 12px;
+}
+
+.article-body h3 {
+    font-size: 19px;
+    margin: 28px 0 10px;
+}
+
+.article-body p {
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.article-body ul,
+.article-body ol {
+    color: var(--text-secondary);
+    margin: 0 0 16px;
+    padding-left: 24px;
+    list-style: revert;
+}
+
+.article-body li {
+    margin-bottom: 8px;
+}
+
+.article-body strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.article-body a {
+    color: var(--accent-color);
+}
+
+.article-body a:hover {
+    text-decoration: underline;
+}
+
+.article-callout {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-left: 3px solid var(--accent-color);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 24px 0;
+}
+
+.article-callout p {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 15px;
+}
+
+/* Contact prompt at the end of help pages */
+.help-cta {
+    max-width: 720px;
+    margin: 56px 0 0;
+    padding: 28px 32px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--glass-border);
+    border-radius: 18px;
+}
+
+.help-cta h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.help-cta p {
+    color: var(--text-secondary);
+    font-size: 15px;
+    margin: 0;
+}
+
+.help-cta a {
+    color: var(--accent-color);
+}
+
+.help-cta a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     :root {
