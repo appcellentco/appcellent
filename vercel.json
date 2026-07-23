@@ -146,6 +146,26 @@
     },
     {
       "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "decibelmeter.appcellent.co"
+        }
+      ],
+      "destination": "/decibelmeter/home"
+    },
+    {
+      "source": "/:path(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "decibelmeter.appcellent.co"
+        }
+      ],
+      "destination": "/decibelmeter/:path"
+    },
+    {
+      "source": "/",
       "destination": "/main/home"
     },
     {
