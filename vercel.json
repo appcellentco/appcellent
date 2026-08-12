@@ -9,6 +9,26 @@
       "has": [
         {
           "type": "host",
+          "value": "getby.appcellent.co"
+        }
+      ],
+      "destination": "/getby/home"
+    },
+    {
+      "source": "/:path(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "getby.appcellent.co"
+        }
+      ],
+      "destination": "/getby/:path"
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
           "value": "studfinder.appcellent.co"
         }
       ],

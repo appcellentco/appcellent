@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Getby</title>
+    <meta name="description" content="Frequently Asked Questions about Getby, the Shopify estimated delivery date app by Appcellent.">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚚</text></svg>">
+    <style>
+        .content-section {
+            padding-top: 120px;
+            padding-bottom: 64px;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        .content-container h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .content-container .intro {
+            color: var(--text-secondary);
+            margin-bottom: 48px;
+            font-size: 18px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-weight: 600;
+            margin-top: 48px;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .faq-item {
+            margin-bottom: 24px;
+            border-bottom: 1px solid var(--glass-border);
+            padding-bottom: 24px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item summary {
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 12px 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .faq-item summary::after {
+            content: '+';
+            font-size: 24px;
+            font-weight: 300;
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+            margin-left: 16px;
+        }
+
+        .faq-item[open] summary::after {
+            transform: rotate(45deg);
+        }
+
+        .faq-item p {
+            margin-top: 12px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+
+        .faq-item ul {
+            margin-top: 12px;
+            list-style: none;
+        }
+
+        .faq-item li {
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+            padding-left: 16px;
+            position: relative;
+            line-height: 1.7;
+        }
+
+        .faq-item li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--text-primary);
+        }
+
+        .faq-item ol {
+            margin-top: 12px;
+            margin-left: 24px;
+        }
+
+        .faq-item ol li {
+            padding-left: 4px;
+            margin-bottom: 6px;
+            color: var(--text-secondary);
+        }
+
+        .faq-item ol li::before {
+            content: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="/" class="logo">Getby</a>
+                <div class="nav-links">
+                    <a href="/faq">FAQ</a>
+                    <a href="/privacy">Privacy</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <div class="content-container">
+                <h1>Frequently Asked Questions</h1>
+                <p class="intro">Everything you need to know about Getby. Can't find an answer? Email us at
+                    <a href="mailto:support@appcellent.co">support@appcellent.co</a>.</p>
+
+                <h2 class="section-title">Getting started</h2>
+
+                <details class="faq-item">
+                    <summary>How do I add the delivery estimate to my store?</summary>
+                    <ol>
+                        <li>Open Getby from your Shopify admin and create a default rule.</li>
+                        <li>Click "Add to product page" — your theme editor opens with the "Delivery estimate" block pre-added.</li>
+                        <li>Click Save in the theme editor.</li>
+                        <li>Back in Getby, click "Publish widget".</li>
+                    </ol>
+                    <p>Repeat step 2 with "Add to cart page" to show estimates in the cart as well.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Do I need to edit my theme code?</summary>
+                    <p>No. Getby installs as a theme app block through Shopify's theme editor. No code changes are made to your theme, and nothing is left behind if you uninstall.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Why don't I see the widget on my storefront?</summary>
+                    <ul>
+                        <li>Make sure the widget is published in the Getby dashboard (not in draft mode).</li>
+                        <li>Make sure the "Delivery estimate" block is added and saved in your theme editor.</li>
+                        <li>Make sure at least one enabled rule matches the product (the default rule matches everything).</li>
+                    </ul>
+                </details>
+
+                <h2 class="section-title">Delivery dates</h2>
+
+                <details class="faq-item">
+                    <summary>How is the delivery date calculated?</summary>
+                    <p>Date = order date + processing time + shipping time, computed in your shop's timezone. Orders placed after your cutoff time count as next working day. Non-working days and holidays are skipped for processing, and optionally for shipping too.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I show different delivery times for different products or countries?</summary>
+                    <p>Yes. Create rules targeted by product, collection, tag or destination country. Rules are matched by priority, exclusions win over inclusions, and the default rule covers everything else.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What is the cutoff countdown?</summary>
+                    <p>If you set a cutoff time (e.g. 15:00), the widget shows a live countdown like "order within 2h 14m" — orders placed before the cutoff ship a day earlier. The countdown always reflects your shop's timezone.</p>
+                </details>
+
+                <h2 class="section-title">Customization</h2>
+
+                <details class="faq-item">
+                    <summary>Can I change how the widget looks?</summary>
+                    <p>Yes. Pick one of the ready-made design presets or set your own colors, font and size. Four layout templates are available: classic, minimal, timeline and badge.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Can I translate the widget text?</summary>
+                    <p>Yes. Widget copy is translatable per language, with {date} and {countdown} placeholders you can position freely in your own wording.</p>
+                </details>
+
+                <h2 class="section-title">Billing</h2>
+
+                <details class="faq-item">
+                    <summary>Is there a free plan?</summary>
+                    <p>Yes — the free plan includes 5 delivery rules, product & collection targeting, cutoff, working days, holidays, and all widget templates and languages. No feature crippling.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What does Pro include?</summary>
+                    <p>Pro ($6.99 / 30 days, 7-day free trial) adds unlimited rules, country and tag targeting, exclusions and priority support. All billing is handled securely by Shopify.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How do I cancel?</summary>
+                    <p>You can cancel your subscription anytime from the Plan page inside the app — no emails, no support tickets. Uninstalling the app also ends the subscription automatically.</p>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-links">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="https://appcellent.co">Appcellent</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Appcellent. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/app.js"></script>
+</body>
+
+</html>

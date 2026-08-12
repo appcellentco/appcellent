@@ -10,8 +10,9 @@ cp -r limify public/limify
 cp -r colorzy public/colorzy
 cp -r decibelmeter public/decibelmeter
 cp -r dartsscorer public/dartsscorer
+cp -r getby public/getby
 cp -r styles public/styles
 cp -r scripts public/scripts
-for dir in public/main public/tcgvault public/studfinder public/metaldetector public/volumebooster public/protractor public/limify public/colorzy public/decibelmeter public/dartsscorer; do
+for dir in public/main public/tcgvault public/studfinder public/metaldetector public/volumebooster public/protractor public/limify public/colorzy public/decibelmeter public/dartsscorer public/getby; do
   [ -f "$dir/index.html" ] && mv "$dir/index.html" "$dir/home.html"
 done
