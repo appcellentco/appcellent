@@ -166,6 +166,26 @@
     },
     {
       "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "dartsscorer.appcellent.co"
+        }
+      ],
+      "destination": "/dartsscorer/home"
+    },
+    {
+      "source": "/:path(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "dartsscorer.appcellent.co"
+        }
+      ],
+      "destination": "/dartsscorer/:path"
+    },
+    {
+      "source": "/",
       "destination": "/main/home"
     },
     {
